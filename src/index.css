@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  display: grid;
+  height: 100%;
+  background: linear-gradient(to right, rgb(115, 122, 124), rgb(26, 41, 58));
+}
+
+.hairMove {
+  transform: skew(var(--value));
+}
+.hairMove2 {
+  transform: skew(var(--value2));
+}
+.hairMove3 {
+  transform: skew(var(--value3));
+}
+.shadows {
+  opacity: var(--value4);
+}
+
+svg {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: fixed;
+  /* margin: auto;  */
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: -4;
+  clip-path: inset(1vw 1vw 1vw 1vw);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.footer {
+  bottom: 1em;
+  font-size: 4vw;
+  right: 2em;
+  z-index: -400;
+  color: white;
+}
+
+.errorMessage {
+  font-weight: bolder;
+  width: 50%;
+  margin-top: 20%;
+  margin-left: 10%;
+  font-size: 3vw;
+  color: rgb(61, 180, 201);
+}
+
+.title {
+  margin-top: 2.5vw;
+  margin-left: 2vw;
+  padding: 0.2vw;
+  top: 1em;
+  font-size: 2vw;
+  font-weight: bolder;
+  color: rgb(32, 34, 41);
+  white-space: nowrap;
+}
+
+.sign {
+  font-size: 0.6vw;
+}
